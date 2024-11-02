@@ -12,82 +12,70 @@
         android:layout_width="310dp"
         android:layout_height="160dp"
         android:layout_marginTop="32dp"
-        android:layout_marginBottom="16dp"
         android:src="@drawable/logo"
-        app:layout_constraintBottom_toTopOf="@+id/btn_login"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/inputEmail"
-        android:layout_width="282dp"
+        android:layout_width="0dp"
         android:layout_height="51dp"
-        android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="72dp"
         android:background="@drawable/input_style"
-        android:ems="10"
+        android:hint="@string/email"
         android:fontFamily="sans-serif"
         android:inputType="textEmailAddress"
-        android:paddingVertical="0dp"
-        android:paddingLeft="15dp"
-        android:text="@string/email"
-        android:textAllCaps="false"
+        android:paddingStart="15dp"
         android:textColor="@color/red_1"
         android:textSize="24sp"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+        app:layout_constraintTop_toBottomOf="@id/img_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp" />
 
     <EditText
         android:id="@+id/inputSenha"
-        android:layout_width="282dp"
+        android:layout_width="0dp"
         android:layout_height="51dp"
-        android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="44dp"
         android:background="@drawable/input_style"
-        android:ems="10"
+        android:hint="@string/senha"
         android:fontFamily="sans-serif"
-        android:paddingVertical="0dp"
-        android:paddingLeft="15dp"
-        android:text="@string/senha"
-        android:textAllCaps="false"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
         android:textColor="@color/red_1"
         android:textSize="24sp"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
+        app:layout_constraintTop_toBottomOf="@id/inputEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp" />
 
     <Button
         android:id="@+id/btn_login"
         android:layout_width="179dp"
         android:layout_height="60dp"
-        android:layout_marginHorizontal="32dp"
         android:layout_marginTop="68dp"
         android:backgroundTint="@color/red_2"
         android:text="@string/entrar"
         android:textColor="@color/back"
         android:textSize="22sp"
         app:cornerRadius="30dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputSenha" />
+        app:layout_constraintTop_toBottomOf="@id/inputSenha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/tv_cadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="36dp"
         android:text="@string/link_cadastro"
         android:textColor="@color/back"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        app:layout_constraintTop_toBottomOf="@id/btn_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
